@@ -1,0 +1,21 @@
+.mostrador{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+@media (max-width: 900px) {
+    .mostrador {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card{
+    margin: 50px;
+}
+
+.buscador{
+    justify-content: space-between;
+    margin: 10px;
+}
