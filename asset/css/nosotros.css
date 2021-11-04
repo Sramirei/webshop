@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik:wght@500&family=Source+Serif+Pro&display=swap');
+
+.titulo{
+font-family: 'Libre Baskerville', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Serif Pro', serif;
+}
+
+.title1{
+    font-size: 40px;
+}
+.title1::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #0d2033;
+    margin: 4px 10px;
+}
+
+.title2{
+    font-size: 70px;
+    margin: 0;
+    margin: 0;
+    font-weight: 700;
+    color: #0d2033;
+}
+
+.parrafo1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parrafo2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto{
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    
+}
+
+p{
+    margin: 20px;
+}
+
+.linea{
+    border-top: 1px solid #0d2033;
+    height: 2px;
+    max-width: 100%;
+    padding: 0;
+    margin: 20px ; 
+}

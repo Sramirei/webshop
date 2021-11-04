@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik:wght@500&family=Source+Serif+Pro&display=swap');
+
+.imag{
+    margin: 2em;
+    width: 600px; 
+    height: 300px;
+}
+
+.producto{
+    display: grid ;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.detalles{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 30px;
+}
