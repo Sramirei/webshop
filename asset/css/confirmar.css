@@ -1,17 +1,17 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
-    background: #F1F2F3;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik:wght@500&family=Source+Serif+Pro&display=swap');
 
 main {
     max-width: 800px;
     width: 90%;
     margin: auto;
     padding: 30px;
+}
+
+.section-title{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 30px;
 }
 
 .formulario {
@@ -66,6 +66,8 @@ main {
 }
 
 .formulario__select {
+    width: 100%;
+    height: 50px;
     padding: 10px 12px;
     color: #bab3a6;
     background-color: #0c0b09;
