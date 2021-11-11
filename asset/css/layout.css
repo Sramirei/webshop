@@ -39,7 +39,7 @@ body{
     font-size: 2.4em !important;
 }
 
-@media only screen and (max-width: 1062px){
+@media only screen and (min-width: 1062px){
 
 	.logo{
 		width: 130px !important;
@@ -47,6 +47,9 @@ body{
 
 }
 
+.menu-toggle{
+    display: none;
+} 
 
 
 /* Nav-bar Dispositivos grandes */
@@ -232,6 +235,8 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51) !important;
 }
 
 
+
+
 /* ------Footer-------- */
 
 
@@ -354,5 +359,119 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51) !important;
     .boton{
         width: 50px;
         transition: ease 1s;
+    }
+}
+
+@media (min-width:360px){
+
+    .navegacion{
+        display: none;
+    }
+    
+    .contenedor{
+        width: 100%;
+    }
+
+    /* nabvar */
+    header{
+        background: #1C1C1C;
+        color: #ebebd3;
+        padding: 1em 0;
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    header::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    .logo{
+        float: left;
+        font-size: 1rem;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .site-nav{
+        top:100%;
+        right:0;
+        position: absolute;
+        background: #0d2033;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+    }
+    .site-nav-open{
+        clip-path: circle(150% at top right);
+    }
+    .site-nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .site-nav li{
+        border-bottom: 1px solid #575766;
+    }
+    .site-nav li:last-child{
+        border-bottom: none;
+    }
+    .site-nav a{
+        color: #fff;
+        display: block;
+        padding: 2em 6em;
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus{
+        background: #e4b363;
+        color: #464655;
+    }
+    
+    .site-nav--icon{
+        display: inline-block;
+        font-size: 1.5em;
+        margin-right: 1em;
+        width: 1.1em;
+        text-align: right;
+        color: rgba(255, 255, 255, .4);
+    }
+    .menu-toggle{
+   
+        padding: 1em;
+        position: absolute;
+        top: .5em;
+        right: .5em;
+        
+    }
+
+    .menu-open .hamburger{
+        transform: rotate(45deg);
+    }
+    .menu-open .hamburger::before{
+        opacity: 0;
+    }
+    .menu-open .hamburger::after{
+        transform: translateY(-3px) rotate(-90deg);
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after{
+        content: '';
+        display: block;
+        background: #ebebd3;
+        height: 3px;
+        width: 1.75em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+    .hamburger::before{
+        transform: translateY(-6px);
+    }
+    .hamburger::after{
+        transform: translateY(3px);
     }
 }
